@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       docker_images:
-        description: 'mysql:latest,mongo:latest,redis:latest'
+        description: 'mysql,mongo,redis'
         required: true
-        default: 'alpine:latest,alpine/curl,busybox:stable-glibc'
+        default: 'mysql,mongo,redis'
 
 jobs:
   pull_and_package:
