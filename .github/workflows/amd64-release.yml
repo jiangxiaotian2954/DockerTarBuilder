@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       docker_images:
-        description: 'mysql,mongo,redis'
+        description: 'mysql:latest,mongo:latest,redis:latest'
         required: true
         default: 'alpine:latest,alpine/curl,busybox:stable-glibc'
 
