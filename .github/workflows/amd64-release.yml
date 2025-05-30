@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       docker_images:
-        description: 'mysql,mongo,redis'
+        description: 'lobehub/lobe-chat'
         required: true
-        default: 'mysql,mongo,redis'
+        default: 'lobehub/lobe-chat'
 
 jobs:
   pull_and_package:
